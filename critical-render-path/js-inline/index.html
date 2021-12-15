@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rendering block - inline JS</title>
+</head>
+<body>
+    <div id="loading">Loading</div>
+    <script type="application/javascript">
+        var i = 0;
+        while(i < 2000000000) {
+            i++;
+        }
+        document.getElementById('loading').innerText = 'Finished';
+    </script>
+    <link rel="stylesheet" href="theme.css"/>
+</body>
+</html>
